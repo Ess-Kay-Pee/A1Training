@@ -1,0 +1,11 @@
+var rev = { "col" : [
+            {"Name" : "Aditya Prakash", "Comment" : "Amazing classes, great staff and wonderful lectures, all who are interested in learning python should have no confusion but just come here." },
+            {"Name" : "Tanmay", "Comment" : "Python Course at Python Training (TGC) south ex. was completed on time. I am fully satisfied with the quality of education provided by our teacher Uttam Saxena and the infrastructure provided by the institute" },
+            {"Name" : "Siddhant", "Comment" : "I enrolled for Python and very much satisfied with the training program, I will give Python Training Institute the highest number. My first thank goes to my SIR whom I’m pressed the most. My best wishes for the center." },
+            {"Name" : "Rupam Dubey", "Comment" : "It was a great experience learning python from a trainer who is very friendly and gives an opportunity to every trainee to learn and enjoy the session. The course was completed with best examples that could be provided. Thank You." },
+            {"Name" : "Akansha Rai Sharma", "Comment" : "The best training institute in Delhi for python. faculty you can count on. awesome management and staff." },
+            {"Name" : "Aakash", "Comment" : "I wanted to thank everyone for helping me a lot. Before I started a course, I was not confident in myself. From the beginning of the course, they have shown great professionalism, patience, and encouragement. They helped me a lot on my first job. They showed me a great path." },
+            {"Name" : "Approvi Mittal", "Comment" : "I think the Python classes very well structured in terms of the content that was going to be taught every class. hats off to Uttam Saxena sir. He was very patient – especially since I had no experience with programming and it was my first time. Hoping to come back to learn more course was completed." },
+            {"Name" : "Manjeet Kaur", "Comment" : "I got good and sufficient knowledge from Python Training Institute in python. Also, training environment was very good.Best training institute ever." },
+            ]};
+var i = 0;

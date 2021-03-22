@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Web Development Interview(Q&A)</title>
+		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+		<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#offer{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100px;
+	}
+</style>
+	<?php include('flower_click.js') ?>
+	</head>
+	<body>
+		<div id="container" class="container">	
+			<div class="menu-panel">
+				<h3 style="padding:10px">Table of Contents</h3>
+				<ul id="menu-toc" class="menu-toc" style="overflow: auto;height:500px;">
+					<li class="menu-toc-current"><a href="#item1">HTML</a></li>
+					<li><a href="#item2">CSS</a></li>
+					<li><a href="#item3">HTML5</a></li>
+					<li><a href="#item4">CSS3</a></li>
+					<li><a href="#item5">Javascript</a></li>
+					<li><a href="#item6">jQuery</a></li>
+					<li><a href="#item7">Bootstrap3</a></li>
+					<li><a href="#item8">Bootstrap4</a></li>
+					<li><a href="#item9">Angular</a></li>
+					<li><a href="#item10">Advanced Javascript</a></li>
+				</ul>
+				<div>
+					<a href="http://tympanus.net/Development/AudioPlayer/">&larr; Previous Demo: Responsive Audio Player</a>
+					<a href="http://tympanus.net/codrops/?p=12795">Back to the Codrops Article</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:500px;">
+								<h2>HTML Interview Question & Answers</h2>
+								<button class="accordion">What is HTML?</button>
+<div class="panel">
+  <p>HTML stands for Hyper Text Markup Language. It is a language of World Wide Web. It is a standard text formatting language which is used to create and display pages on the Web. It makes the text more interactive and dynamic. It can turn text into images, tables, links. More details.</p>
+</div>
+<button class="accordion">What are some common lists that are used when designing a page?</button>
+<div class="panel">
+  <p>There are many common lists which are used to design a page. You can choose any or a combination of the following list types:
+  <br>
+<b>Ordered list</b> - The ordered list displays elements in numbered format. It is represented by < ol> tag.
+<br>
+<b>Unordered list</b> - The unordered list displays elements in bulleted format. It is represented by < ul> tag.
+<br>
+<b>Definition list</b> - The definition list displays elements in definition form like in dictionary. The < dl>, < dt> and < dd> tags are used to define description list.</p>
+</div>
+<button class="accordion">What is the difference between progress and meter tag?</button>
+<div class="panel">
+  <p>The progress tag is used to represent the progress of the task only while the meter tag is used to measure data within a given range.</p>
+</div>
+
+<button class="accordion">What is the difference between HTML elements and tags?</button>
+<div class="panel">
+  <p>HTML elements communicate to the browser how to render text. When surrounded by angular brackets <> they form HTML
+tags, which come in pairs and surround text.</p>
+</div>
+
+<button class="accordion">What does DOCTYPE mean?</button>
+<div class="panel">
+  <p>The term DOCTYPE means Document Type Definition and tells the browser which type of HTML is used on a webpage. Browsers
+use DOCTYPE to determine how to render a page. Failing to use DOCTYPE will load your page in Quirks Mode</p>
+</div>
+
+<button class="accordion">What are the limitations when serving XHTML pages?</button>
+<div class="panel">
+  <p>The main limitation is the poor browser support of XHTML. Internet Explorer and other user agents cannot parse XHTML as
+XML. Thus, it is not that extensible language as one might think.</p>
+</div>
+<button class="accordion">What is the syntax difference between a bulleted list and numbered list?</button>
+<div class="panel">
+  <p>Bulleted lists use the <ul> tag, which stands for “unordered,” whereas <ol> is used to create an ordered list.</p>
+</div>
+<button class="accordion">What are some common lists that are used when designing a page?</button>
+<div class="panel">
+  <p>There are many common lists which are used to design a page. You can choose any or a combination of the following list types:
+  <br>
+<b>Ordered list</b> - The ordered list displays elements in numbered format. It is represented by < ol> tag.
+<br>
+<b>Unordered list</b> - The unordered list displays elements in bulleted format. It is represented by < ul> tag.
+<br>
+<b>Definition list</b> - The definition list displays elements in definition form like in dictionary. The < dl>, < dt> and < dd> tags are used to define description list.</p>
+</div>
+<button class="accordion">What is the difference between progress and meter tag?</button>
+<div class="panel">
+  <p>The progress tag is used to represent the progress of the task only while the meter tag is used to measure data within a given range.</p>
+</div>
+
+<button class="accordion">What is the difference between the application model of HTML and HTML5?</button>
+<div class="panel">
+  <p>There is not a big difference between the two. HTML5 is a continuum of HTML. There has been no major paradigm shift.
+From a broader viewpoint, HTML was a simple language for laying out text and images on a webpage, whereas HTML5 can
+be viewed as a development platform that does what HTML does that and more, including better support for audio, video,
+and interactive graphics. It has a number of new elements, supports offline data storage for applications, and has more robust
+exchange protocols.</p>
+</div>
+
+<button class="accordion">What is a tag?</button>
+<div class="panel">
+  <p>In HTML, a tag tells the browser what to do. When you write an HTML page, you enter tags for many reasons
+-- to change the appearance of text, to show a graphic, or to make a link to another page. </p>
+</div>
+
+<button class="accordion">How do I create frames? What is a frameset?</button>
+<div class="panel">
+  <p>Frames allow an author to divide a browser window into multiple (rectangular) regions. Multiple documents
+can be displayed in a single window, each within its own frame. Graphical browsers allow these frames to be
+scrolled independently of each other, and links can update the document displayed in one frame without
+affecting the others.
+<br>
+You can't just "add frames" to an existing document. Rather, you must create a frameset document that defines
+a particular combination of frames, and then display your content documents inside those frames. The frameset
+document should also include alternative non-framed content in a NOFRAMES element.
+The HTML 4 frames model has significant design flaws that cause usability problems for web users. Frames
+should be used only with great care. </p>
+</div>                                            
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:500px;">
+								<h2>CSS Interview Question & Answers</h2>
+								<button class="accordion">What are the possible ways to apply CSS styles to a web page?</button>
+<div class="panel">
+  <p>CSS can be applied in the following three ways:
+  <br>
+• Linked: Create a separate .css file and add all the style for the web page there. Make sure the file is linked to the HTML
+document(s) using the link tag
+<br>
+• Embedded: Inside the HTML document, open a style tag and inside that, add all styles just like you’d do on a linked file.
+<br>
+• Inline: This is done by adding a style attribute inside an HTML element.</p>
+</div>
+								<button class="accordion">Explain the CSS box model.</button>
+<div class="panel">
+  <p>CSS box model is made up of margins, borders, padding, and content. The box model provides a more structured way to space
+elements in relationship to each other in web pages. In your browser’s developer tools, the CSS box model is found at the end of
+the CSS section and it looks like this:</p>
+</div>
+								<button class="accordion"> What is the difference between visibility:hidden and display:none?</button>
+<div class="panel">
+  <p>Although these two properties seem similar, there is quite an important difference between the two:
+  <br>
+• visibility:hidden hides the element, but it will still takes up space, this way affecting the layout of the document.
+<br>
+• display:none also hides the element, but will not take up space and the page will appear as if the element is not present.</p>
+</div>
+								<button class="accordion">What are CSS preprocessors and why do we use them?</button>
+<div class="panel">
+  <p>CSS preprocessors convert code written in a preprocessed language like SASS or LESS into the same old CSS we’ve been using
+for such a long time now. The main advantages of using preprocessors are:
+<br>
+• Ability to define variables
+<br>
+• Ability to use nested syntax
+<br>
+• Ability to create and use mixins (functions)
+<br>
+• Use of mathematical and operational functions
+<br>
+However, there are also some disadvantages like updating issues and debugging difficulties.</p>
+</div> 
+								<button class="accordion">What are grid systems and why do we use them in web pages?</button>
+<div class="panel">
+  <p>Grid systems are structured rules that enable content to be stacked horizontally and vertically in a consistent and sustainable way.
+They find heavily usage in today’s websites because they offer increased producitvity while coding, they’re versatile and ideal
+for responsive layouts</p>
+</div>
+								<button class="accordion"> What is the purpose of the z-index and how is it used?</button>
+<div class="panel">
+  <p>The z-index property specifies the stack order of an element within the document area (or a part of it). An element with greater
+stack order will always be in front of an element with a lower stack order. However, z-index only works on positioned elements
+(position:absolute, position:relative, or position:fixed). It can have four kind of values:
+<br>
+• Auto: Sets the stack order equal to its parents.
+<br>
+• Number: Orders the stack order.
+<br>
+• Initial: Sets this property to its default value (0).
+<br>
+• Inherit: Inherits this property from its parent element.</p>
+</div>
+                               
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>HTML5 Interview Question & Answers</h2>
+								<button class="accordion">What are some of the major new API’s that come standard with HTML5?</button>
+<div class="panel">
+  <p>Among others: Media API, Text Track API, Application Cache API, User Interaction, Data Transfer API, Command API, and
+the History API.</p>
+</div>
+								<button class="accordion">What is the difference in caching between HTML5 and the old version of HTML?</button>
+<div class="panel">
+  <p>An crucial new feature of HTML5 is the Application Cache which creates an offline version of a web application. and stores
+website files such as HTML files, CSS, images, and JavaScript, locally. Obviously, that speeds up site performance</p>
+</div>
+								<button class="accordion">What is image map?</button>
+<div class="panel">
+  <p>An image map is a list of coordinates relating to a specific image, created in order to hyperlink areas of the image to different
+destinations (as opposed to a normal image link, in which the entire area of the image links to a single destination).</p>
+</div>
+								<button class="accordion">What is the advantage of collapsing white space?</button>
+<div class="panel">
+  <p>White spaces are blank sequences of space characters, which is actually treated as a single space character in HTML. The browser
+collapses multiple space into a single space, so we can indent lines of text without worrying about multiple spaces. This enables
+us to organize the code into a much more readable format</p>
+</div>
+								<button class="accordion">What are data- attributes good for?</button>
+<div class="panel">
+  <p>data- attribute is used to assigns custom data to an element. The stored (custom) data can then be used in the page’s JavaScript
+to create a more engaging user experience.</p>
+</div>
+								<button class="accordion">Describe the difference between cookies, sessionStorage, and localStorage.</button>
+<div class="panel">
+  <p>Cookies are small text files that websites place in a browser for tracking or login purposes, and hold a modest amount of data.
+Meanwhile, localStorage and sessionStorage are new objects, both of which are storage specifications but vary in scope and
+duration. Local storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+Futhermore, is it permanent. sessionStorage only lasts as long as the duration of the longest open tab.</p>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:800px;">
+								<h2>CSS3 Interview Question & Answers</h2>
+								<button class="accordion">What is the difference between CSS and CSS3?</button>
+<div class="panel">
+  <p>CSS3 is upgraded version of CSS with new future like Selectors, Box Model, Backgrounds and Borders, Text Effects,2D/3D Transformations</p>
+</div>
+								<button class="accordion">What Is Wrapping In Css3?</button>
+<div class="panel">
+  <p>Wrapping is a vital property for proper display of
+contents in web pages. If wrapping is disabled then
+the user could not display and view long lines that
+goes outside the window boundary and thus becomes
+useless.</p>
+</div>
+								<button class="accordion">What Is The Syntax Of Opacity In Css3?</button>
+<div class="panel">
+  <p>style="opacity:0.4;filter:alpha(opacity=40)"
+  <br>
+Firefox uses the property opacity:x for transparency,
+<br>
+while IE uses filter:alpha (opacity=x).</p>
+</div>
+								<button class="accordion">Question 3. How Do You Manage The CompleteSite In Center Of The Browser, Which Is Completely Using Divs Using The Help Of Css2 Or Css3?</button>
+<div class="panel">
+  <p>In CSS file
+1. body{width:100%;}
+2. Create a div tag and assign a class, say 'container'
+and place all your content in this div tag.
+3. Assign properties to this class in CSS file
+container{width:777px; margin:auto;}.</p>
+</div>
+								<button class="accordion"> How Is Multi-column Feature Used In Css3?</button>
+<div class="panel">
+  <p>By using the Multi-Column feature of CSS3 the web
+designers can get their output in multiple columns
+with definitions defined for each column like
+column-width, column-count.</p>
+</div>
+								<button class="accordion"> What Is The Syntax Of Word Wrap In Css3?</button>
+<div class="panel">
+  <p>The general syntax word-wrap property of CSS3 is
+as follows:
+word-wrap: normal| break-word
+The default initial value is normal in the above
+syntax.</p>
+</div>
+								<button class="accordion"> How Flexibility Is Achieved More In Css3?</button>
+<div class="panel">
+  <p>Flexibility achieved is in greater ratio in CSS3
+because of the feature of handling multiple style
+sheets in CSS3 and because of the modularized
+approach of CSS3.</p>
+</div>
+								<button class="accordion">What Are The Values That Can Be Taken By Property White-space Of Css3?</button>
+<div class="panel">
+  <p>The five values that can be taken by property whitespace of CSS3 are normal, pre, no wrap, pre-wrap
+and pre-line.</p>
+</div>
+								<button class="accordion">What Are Cascading Style Sheets?</button>
+<div class="panel">
+  <p>Cascading style sheets help the designer in various
+ways. It primarily helps to design style sheets for
+content and HTML pages. It can be applied to any
+XML document or markup language.</p>
+</div>
+								<button class="accordion"> Explain About Some Of The Features Of Css?</button>
+<div class="panel">
+  <p>Some of the features used by CSS are to define a
+layout, colors, fonts, etc. It separates the content
+from the design part which makes the content much
+more visible thereby improving productivity of the
+entire process. It can make the same page appear in
+different formats.</p>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item5">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Javascript Interview Question & Answers</h2>
+								<button class="accordion">Define event bubbling.</button>
+<div class="panel">
+  <p>Because JavaScript allows DOM elements to be nested inside each other, if the handler of the child is clicked, the handler of
+ parent will also work as if it were clicked too. That sums up what event bubbling really is.</p>
+</div>
+								<button class="accordion">What is "this" keyword in Javascript?</button>
+<div class="panel">
+  <p>this is used to refer to the current object in the code. In the global execution context (outside of any function), this refers to
+the global object, whether in strict mode or not.</p>
+</div>
+								<button class="accordion">Does Javascript support automatic type conversion?</button>
+<div class="panel">
+  <p>Yes. JavaScript does support automatic type conversion and it is the common way of type conversion used by JavaScript developers.</p>
+</div>
+								<button class="accordion">What is event delegation and how does it work?</button>
+<div class="panel">
+  <p>Event delegation allows us to avoid adding event listeners to specific nodes of the DOM; instead, the event listener is added to
+one parent. Using event delegation it’s possible to add an event handler to an element, wait for an event to bubble up from a child
+element and easily determine from which element the event originated.</p>
+</div>
+								<button class="accordion">What is the difference between window.onload and onDocumentReady?</button>
+<div class="panel">
+  <p>The window.onload event will not trigger until every single element on the page has been fully loaded, including CSS, images
+and/or other assets. The main disadvantage is that it might take a while before any code is actually executed. On the other hand,
+onDocumentReady executes code as soon as DOM is loaded.</p>
+</div>
+								<button class="accordion">Which is faster between Javascript and ASP?</button>
+<div class="panel">
+  <p>Javascript is obviously faster. Why? Because Javascript is a client-side language and execution does not need assistance from
+the web server. In contrast, ASP is server-side therefore is slower.</p>
+</div>
+								<button class="accordion">What is an anonymous function is Javascript</button>
+<div class="panel">
+  <p>An anonymous function is a function declared without any named identifier and in general, is not accessible after its declaration</p>
+</div>
+								<button class="accordion">Explain the role of break and continue statements.</button>
+<div class="panel">
+  <p>• Break statements are used to come out of the current loop
+  <br>
+• Continue statements continue the current loop with a new recurrence</p>
+</div>
+								<button class="accordion">How are object properties assigned in JS?</button>
+<div class="panel">
+  <p>Similar to the way a value is assigned to a variable, we assign object properties like this for example: document.form.
+action="submit"</p>
+</div>
+								<button class="accordion">What is the difference between undeclared and undefined variables?</button>
+<div class="panel">
+  <p>• Undeclared variables are variables that do not exist in a program and are not declared. If the program tries to read the value of
+an undeclared variable, then a runtime error is generated.
+<br>
+• Undefined variables are variables that are declared in the program but have not been given any value. If the program tries to
+read the value of an undefined variable, an undefined value is returned.</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item6">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>jQuery Interview Question & Answers</h2>
+								<button class="accordion">How is jQuery different to Javascript?</button>
+<div class="panel">
+  <p>Well, jQuery is not a programming language, but a well written JavaScript code (a framework). It is a library built with Javascript.
+Javascript is the core programming language. It is very popular because it abstracts away cross-browser compatibility issues and
+emphasises unobtrusive and callback-driven Javascript programming.</p>
+</div>
+								<button class="accordion">What is $() in jQuery?</button>
+<div class="panel">
+  <p>The $() function is an alias of jQuery() function. $() function is used to wrap any object into jQuery object, which then
+allows you to call various method defined in the jQuery object.</p>
+</div>
+								<button class="accordion">What are jQuery events?</button>
+<div class="panel">
+  <p>Events are actions performed on specific conditions. When we perform these actions on an HTML page, we can do whatever
+we want. We then use event handlers to perform the action. Some important handlers are for example: bind(), unbind(),
+blur(), off(), hover(), on(), one(), ready(),trigger() etc...</p>
+</div>
+								<button class="accordion">What is called chaining?</button>
+<div class="panel">
+  <p>Chaining is used to connect multiple events and functions in a selector. It means specifying multiple functions and/or selectors
+to an element.</p>
+</div>
+								<button class="accordion">What is the difference between event.PreventDefault and event.stopPropagation?</button>
+<div class="panel">
+  <p>In short, preventDefault(): Stops the default action of an element from happening. event.stopPropagation():
+Prevents the event from bubbling up the DOM tree, thus preventing any parent handlers from being notified of the event.</p>
+</div>
+								<button class="accordion">How can we hide an image on a button click using jQuery?</button>
+<div class="panel">
+  <p>We can have a click handler and then the hide method applied to the image:
+  <br>
+$("#button").click(function(){
+<br>
+$("#image").hide();
+<br>
+});</p>
+</div>
+								<button class="accordion"> What is AJAX in jQuery?</button>
+<div class="panel">
+  <p>AJAX stands for “Asynchronous JavaScript and XML”. AJAX is about exchanging data with a server, without reloading the
+whole page. It is a technique for creating fast and dynamic web pages.
+<br>
+• $.ajax() - Performs an async AJAX request.
+<br>
+• $.get() - Loads data from a server using an AJAX HTTP GET request.
+<br>
+• $.post() - Loads data from a server using an AJAX HTTP POST request</p>
+</div>
+								<button class="accordion">What Is the Format of an AJAX Request?</button>
+<div class="panel">
+  <p>An AJAX request can be in any of the following formats:
+  <br>
+• Text File
+<br>
+• HTML
+<br>
+• JSON Object</p>
+</div>
+								<button class="accordion">How can you find out that an AJAX request has been completed?</button>
+<div class="panel">
+  <p>We can use the ReadyState property to check whether AJAX request has been completed. If the property is equal to 4, the request
+has been completed and data is now available.</p>
+</div>
+								<button class="accordion">Do AJAX requests retain PHP session info, when calling multiple times?</button>
+<div class="panel">
+  <p>Yes, PHP retains the session info over multiple ajax calls. The duration of the php session depends on SESSION configuration.</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item7">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Bootstrap3 Interview Question & Answers</h2>
+								<button class="accordion">Explain The Basic Structure Of Bootstrap Framework?</button>
+<div class="panel">
+  <p>o Bootstrap framework takes use of front end
+only. Its overview start with HTML5 based grid
+system i.e. 12 column layout for responsive
+web design which has mobile first design 
+approach.Than typography concerns with text
+formatting support for LESS and SASS in
+future. Making Bootstrap tables is easy too
+whereas Bootstrap Forms are very popular.
+<br>
+o Ease of style and making define the Bootstrap
+buttons with default classes available for
+images as well. Comprehensive helper classes
+and responsive utilities are there which caters
+to ad hoc functionality in web designing if
+required. For added functionality you need to
+download Jquery plugins i.e. Bootstrap Modals,
+Bootstrap Tooltip etc</p>
+</div>
+								<button class="accordion">Does Bootstrap Supports All The Modern Browsers?</button>
+<div class="panel">
+  <p>Current version i.e. Bootstrap 3 supports all the
+modern browsers with latest version i.e. Firefox,
+Google Chrome, IE (Internet Explorer), Opera and
+Safari.
+</p>
+</div>
+								<button class="accordion">Popular Term ‘mobile First Design’ Was Introduced In Bootstrap From Beginning?</button>
+<div class="panel">
+  <p>Although Bootstrap started supporting responsive web
+designing from version 2.0. Mobile First design was
+introduced in the Bootstrap current version 3.0.</p>
+</div>
+								<button class="accordion">Question 7. Explain The Use Of Media Queries In The Bootstrap Framework?</button>
+<div class="panel">
+  <p>There are three main breakpoints that are used in
+Bootstrap for making it compatible to all platforms.
+<br>
+o Small Devices (Mobiles, Smartphone, Tablets,)
+at 768px
+<br>
+o Medium Devices (PC, Desktop, Laptops) at
+992px and up
+<br>
+o Large Devices (Large Screen desktops,
+Laptops) with 1200px and up
+<br>
+o Max-width and Min-width are used in CSS
+media queries for affecting the specific device
+set.</p>
+</div>
+								<button class="accordion">Explain The Use Of Icons In Bootstrap Framework?</button>
+<div class="panel">
+  <p>There are around 250 glyphs available free of cost
+with Bootstrap from Glyphicon Halflings fonts set.
+You can select the best one from the given set of icons
+easily.</p>
+</div>
+								<button class="accordion">What Is The Default Gutter Width Provided In The Bootstrap 3 Grid System?</button>
+<div class="panel">
+  <p>There are around 250 glyphs available free of cost
+with Bootstrap from Glyphicon Halflings fonts set.
+You can select the best one from the given set of icons
+easily.</p>
+</div>
+								<button class="accordion">What Is The Default Gutter Width Provided In The Bootstrap 3 Grid System?</button>
+<div class="panel">
+  <p>30px is the standard size given to all Grid layouts in
+Bootstrap by default (15px on each side of a column).</p>
+</div>
+								<button class="accordion">What If There Are More Than 12 Column Being Used In The Bootstrap Grid System? Does It Still Work?</button>
+<div class="panel">
+  <p>Yes it does work and restructures the columns
+accordingly. each group of extra columns acts as one
+unit, wrap onto a new line.</p>
+</div>
+								<button class="accordion">What Are The Default Sizes GivenTo <body> Tag In The Bootstrap Framework?</button>
+<div class="panel">
+  <p>n this framework default font size : 14px and line
+height 1.428 px is given to tag. Also tag are given
+padding-bottom of 10px by default.</p>
+</div>
+								<button class="accordion"> Explain In Brief About Bootstrap 3 Tables?</button>
+<div class="panel">
+  <p>Tables can be easily made with basic html tag and
+specific classes provided in Bootstrap 3. You can make
+table with Striped rows, bordered table, hover rows,
+condensed table and responsive table using their
+specific classes for right results. Read more about
+Bootstrap 3 tables here.</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item8">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Bootstrap4 Interview Question & Answers</h2>
+								<button class="accordion">What Is Bootstrap 4?</button>
+<div class="panel">
+  <p>Bootstrap 4 is the newest version of Bootstrap, which
+is the most popular HTML, CSS, and JavaScript
+framework for developing responsive, mobile-first
+web sites. Bootstrap 4 is completely free to download
+and use!</p>
+</div>
+								<button class="accordion">When Bootstrap 4 Release Date?</button>
+<div class="panel">
+  <p>Bootstrap 4 alpha 1 was released on 19th August 2015.
+Since then there have been many alpha releases. And
+finally after that on 10th August 2017, Bootstrap
+released the first beta for the version 4 of Bootstrap.
+Bootstrap 4 Beta 2 was released on October 19th,
+2017.</p>
+</div>
+								<button class="accordion">Why Use Bootstrap 4?</button>
+<div class="panel">
+  <p>Easy to use: Anybody with just basic knowledge of
+HTML and CSS can start using Bootstrap 4.
+<br>
+Responsive features: Bootstrap's responsive CSS
+adjusts to phones, tablets, and desktops.
+<br>
+Mobile-first approach: In Bootstrap 4, mobile-first
+styles are part of the core framework.<br>
+Browser compatibility: Bootstrap 4 is compatible
+with all modern browsers (Chrome, Firefox, Internet
+Explorer 10+, Safari, and Opera).</p>
+</div>
+								<button class="accordion">How Many Bootstrap 4 Media Objects?</button>
+<div class="panel">
+  <p>Bootstrap media object component provides an easy
+way to align text and media objects when presenting
+them alongside each other. It allows you to quickly
+and easily float media to the left and/or right of a
+content block.
+<br>
+Only two classes are required: The wrapping .media
+and the .media-body around your content. Optional
+padding and margin can be controlled through spacing
+utilities</p>
+</div>
+								<button class="accordion">Explain Bootstrap 4 Images?</button>
+<div class="panel">
+  <p>Bootstrap provides classes that can be used when
+working with the img element and examples for opting
+images into responsive behavior and adds lightweight
+styles to them all classes.
+<br>
+o Responsive images
+<br>
+o Thumbnail
+<br>
+o Aligning Images
+<br>
+o Image Shapes & Corners.</p>
+</div>
+								<button class="accordion">What Is Bootstrap 4 Responsive Images?</button>
+<div class="panel">
+  <p>Responsive images automatically adjust to fit the size
+of the screen. Bootstrap is made responsive with .imgfluid class to the tag. The .img-fluid class applies
+max-width: 100%; and height: auto; are applied to the
+image so that it scales with the parent element.
+<img src="image.jpg" class="img-fluid"
+alt="responsive Image"></p>
+</div>
+								<button class="accordion">What Is Bootstrap 4 Image Thumbnail?</button>
+<div class="panel">
+  <p>The .img-thumbnail class shapes the image to a
+thumbnail (bordered):
+<img src="image.jpg" class="img-thumbnail"
+alt="thumbnails image" /></p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item9">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Angular Interview Question & Answers</h2>
+								<button class="accordion">What’s the basic syntax of a Decorator in Angular?</button>
+<div class="panel">
+  <p>@() with optional parameters.</p>
+</div>
+								<button class="accordion">What is [(ngModel)] used for?</button>
+<div class="panel">
+  <p>Two-way data binding.</p>
+</div>
+								<button class="accordion">What are the basic parts of an Angular application?</button>
+<div class="panel">
+  <p>Modules, Component, Data Binding, Template, Directives, Dependency Injection, Services,Routing.</p>
+</div>
+								<button class="accordion">Tell me about a time you received feedback on a task.</button>
+<div class="panel">
+  <p>This is a typical open-ended question. The candidate should demonstrate they can accept,
+understand and act on feedback.</p>
+</div>
+								<button class="accordion">Describe how you would approach solving (some problem) on a high level?</button>
+<div class="panel">
+  <p>In this question, the problem should be directly related to the work the candidate will
+actually be doing. You aren’t looking for a perfect answer or even necessarily a correct answer.
+Instead, listen to how they approach solving a problem, their ability to break a problem down into
+parts, and if they can anticipate problems.</p>
+</div>
+								<button class="accordion">What function is called when an object is created in TypeScript? What is it’s basic syntax in TypeScript code?</button>
+<div class="panel">
+  <p>The constructor function is called. It’s syntax is: Constructor(){}.</p>
+</div>
+								<button class="accordion">In Angular, how can you interact between Parent and Child components?</button>
+<div class="panel">
+  <p>When passing data from Parent to Child component, you can use the @Input decorator in
+the Child component. When passing data from Child to Parent component, you can use the @Output
+decorator in the Child component.</p>
+</div>
+								<button class="accordion">What is the sequence of Angular Lifecycle Hooks?</button>
+<div class="panel">
+  <p>OnChange() – OnInit() – DoCheck() – AfterContentInit() – AfterContentChecked() –
+AfterViewInit() – AfterViewChecked() – OnDestroy().</p>
+</div>
+								<button class="accordion">What is the main difference between constructor and ngOnInit?</button>
+<div class="panel">
+  <p>The constructor is a feature of the class itself, not Angular. The main difference is that
+Angular will launch ngOnInit after it has finished configuring the component. Meaning, it is a signal
+through which the @Input() and other banding properties and decorated properties are available in
+ngOnInit, but are not defined within the constructor by design.</p>
+</div>
+								<button class="accordion">What is the main difference between constructor and ngOnInit?</button>
+<div class="panel">
+  <p>The constructor is a feature of the class itself, not Angular. The main difference is that
+Angular will launch ngOnInit after it has finished configuring the component. Meaning, it is a signal
+through which the @Input() and other banding properties and decorated properties are available in
+ngOnInit, but are not defined within the constructor by design.</p>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item10">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Advanced Javascript Interview Question & Answers</h2>
+							    <button class="accordion">What Is The Difference Between Undefined And Not Defined In Javascript?</button>
+<div class="panel">
+  <p></pIn JavaScript, if you try to use a variable that doesn't
+exist and has not been declared, then JavaScript will
+throw an error var name is not defined and script will
+stop executing. However, if you use typeof
+undeclared_variable, then it will return undefined.
+<br>
+Before getting further into this, let's first understand
+the difference between declaration and definition.
+<br>
+Let's say var x is a declaration because you have not
+defined what value it holds yet, but you have
+declared its existence and the need for memory
+allocation.
+<br>
+> var x; // declaring x
+> console.log(x); //output: undefined
+Here var x = 1 is both a declaration and definition
+(also we can say we are doing an initialisation). In
+the example above, the declaration and assignment
+of value happen inline for variable x. In JavaScript,
+every variable or function declaration you bring to
+the top of its current scope is called hoisting.
+<br>
+The assignment happens in order, so when we try to
+access a variable that is declared but not defined yet,
+we will get the result undefined.
+<br>
+var x; // Declaration
+if(typeof x === 'undefined') // Will return true
+If a variable that is neither declared nor defined,
+when we try to reference such a variable we'd get the
+result not defined.
+<br>
+> console.log(y); // Output: ReferenceError: y is not
+defined>
+</div>
+								<button class="accordion">What Will Be The Output Of The Code Below? var Y = 1; if (function F(){}) { y += Typeof F; } console.log(y);</button>
+<div class="panel">
+  <p>The output would be 1undefined. The if condition
+statement evaluates using eval, so eval(function
+f(){}) returns function f(){} (which is true).
+<br>
+Therefore, inside the if statement, executing typeof f
+returns undefined because the if statement code
+<br>
+executes at run time, and the statement inside the if
+condition is evaluated during run time.
+<br>
+var k = 1;
+<br>
+if (1)
+<br>
+{
+<br>
+eval(function foo(){});
+<br>
+k += typeof foo;
+<br>
+}
+<br>
+console.log(k);
+<br>
+The code above will also output 1undefined.
+<br>
+var k = 1;
+<br>
+if (1)
+<br>
+{
+<br>
+function foo(){};
+<br>
+k += typeof foo;
+<br>
+}
+console.log(k); // output 1function</p>
+</div>
+								<button class="accordion">What Is The Drawback Of Creating True Private Methods In Javascript?</button>
+<div class="panel">
+  <p>One of the drawbacks of creating true private
+methods in JavaScript is that they are very memoryinefficient, as a new copy of the method would be
+created for each instance.
+<br>
+var Employee = function (name, company, salary)
+<br>
+{
+<br>
+this.name = name || ""; //Public attribute
+<br>
+default value is null
+<br>
+this.company = company || ""; //Public attribute
+<br>
+default value is null
+<br>
+this.salary = salary || 5000; //Public attribute
+<br>
+default value is null
+<br>
+// Private method
+<br>
+var increaseSalary = function ()
+<br>
+{
+<br>
+this.salary = this.salary + 1000;
+<br>
+};
+<br>
+// Public method
+<br>
+this.dispalyIncreasedSalary = function()
+<br>
+{
+<br>
+increaseSlary();
+<br>
+console.log(this.salary);
+<br>
+};
+<br>
+};
+<br>
+// Create Employee class object
+<br>
+var emp1 = new Employee("John","Pluto",3000);
+<br>
+// Create Employee class object
+<br>
+var emp2 = new Employee("Merry","Pluto",2000);
+<br>
+// Create Employee class object
+<br>
+var emp3 = new Employee("Ren","Pluto",2500);
+<br>
+Here each instance variable emp1, emp2, emp3 has
+<br>
+its own copy of the increaseSalary private method.
+<br>
+So, as a recommendation, don’t use private methods
+<br>
+unless it’s necessary.</p>
+</div>
+								<button class="accordion">What Will Be The Output Of The Following Code? var Output = (function(x) { Delete X; return X;} )(0); console.log(output);</button>
+<div class="panel">
+  <p>The output would be 0. The delete operator is used
+to delete properties from an object. Here x is not an
+object but a local variable. delete operators don't
+affect local variables.</p>
+</div>
+								<button class="accordion">What Will Be The Output Of TheFollowing Code? var X = 1; var Output = (function() { Delete X; Return X; } )(); console.log(output);</button>
+<div class="panel">
+  <p>The output would be 1. The delete operator is used
+to delete the property of an object. Here x is not an
+object, but rather it's the global variable of type
+number.</p>
+</div>
+								<button class="accordion">What Will Be The Output Of The Code Below? var X = { Foo : 1}; var Output = (function() { delete X.foo; return X.foo; } )(); console.log(output);</button>
+<div class="panel">
+  <p>The output would be undefined. The delete operator
+is used to delete the property of an object. Here, x is
+an object which has the property foo, and as it is a
+self-invoking function, we will delete the foo
+property from object x. After doing so, when we try
+to reference a deleted property foo, the result
+isundefined.
+</p>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>

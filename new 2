@@ -1,0 +1,119 @@
+<div class="tab-inn">
+                                    <form name="insertrecord" method="post" >
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input type="text" name="Profile_Description" value="<?php echo htmlentities($result->profileDescription);?>" class="form-control" required> 
+                                                <label class="">Profile Description</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input type="text" name="Skill" value="<?php echo htmlentities($result->SkillReq);?>" class="form-control" required> 
+                                                <label class="">Skill Required</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <select name="Mode_of_Jobs">
+  <option value="Part_time">Part time</option>
+  <option value="Full_time">Full time</option>
+  <option value="Work_from_Home">Work from Home</option>
+</select>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input type="text" name="Job_Description" class="validate" value="<?php echo htmlentities($result->JobDescription);?>" class="form-control" required> 
+                                                <label class="">Job Description</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input type="text" name="Company_name" value="<?php echo htmlentities($result->CompanyName);?>" class="form-control" required> 
+                                                <label class="">Company Name</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input type="Number" name="Experience" value="<?php echo htmlentities($result->Experience);?>" class="form-control" required>
+                                                <label class="">Experience</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                             <select name="Mode_of_Jobs_Intern">
+  <option value="Fresher">Fresher</option>
+  <option value="Experience">Experience</option>
+  <option value="BPO/KPO">BPO/KPO</option>
+</select>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <select name="Batch">
+                                                <option value="Weekdays">Weekdays</option>
+                                                <option value="Weekend">Weekend</option>
+                                                <option value="both">Both</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input type="text" name="Job_Location" value="<?php echo htmlentities($result->JobLocation);?>" class="form-control" required> 
+                                                <label>Job Location</label>
+                                            </div>
+                                            <div class="input-field col s6">    
+                                                 <input type="text" name="Address" value="<?php echo htmlentities($result->Address);?>" class="form-control" required> 
+                                                <label>Address</label>
+                                             
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input type="text" name="Contact_Person" value="<?php echo htmlentities($result->ContactPerson);?>" class="form-control" required> 
+                                                <label class="">Contact Person</label>
+                                                 
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input type="Number" name="Mobile_Number" value="<?php echo htmlentities($result->MobileNo);?>" class="form-control" required> 
+                                                <label class="">Mobile Number</label>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                 <input type="text" name="Location" value="<?php echo htmlentities($result->Location);?>" class="form-control" required> 
+                                                <label class="">Location</label>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                                
+                                            </div>
+                                            <?php }} ?>
+
+<div class="row" style="margin-top:1%">
+<div class="col-md-8">
+<input type="submit" name="update" value="update">
+</div>
+</div> 
+											 </form>
+											 
+											 
+											 
+											 
+											 <?php 
+// Get the userid
+$id=intval($_GET['id']);
+$sql= "select * from interviewjobs where id=:id";
+//$sql = "SELECT id,profileDescription,SkillReq,ModeOfJob,JobDescription,CompanyName,Experience,ModeOfJobIntern,Batch,JobLocation,Address,ContactPerson,MobileNo,Location from interviewjobs where id=:id";
+//Prepare the query:
+$query = $conn->prepare($sql);
+//Bind the parameters
+$query->bindParam(':id',$id,PDO::PARAM_STR);
+//Execute the query:
+$query->execute();
+//Assign the data which you pulled from the database (in the preceding step) to a variable.
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+// For serial number initialization
+$cnt=1;
+if($query->rowCount() > 0)
+{
+//In case that the query returned at least one record, we can echo the records within a foreach loop:
+foreach($results as $result)
+{               
+?>
+
+<?php }} ?>

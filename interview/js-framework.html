@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Web Development Interview(Q&A)</title>
+		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+		<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#offer{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100px;
+	}
+</style>
+	<?php include('flower_click.js') ?>
+	</head>
+	<body>
+		<div id="container" class="container">	
+			<div class="menu-panel">
+				<h3 style="padding:10px">Table of Contents</h3>
+				<ul id="menu-toc" class="menu-toc" style="overflow: auto;height:500px;">
+					<li class="menu-toc-current"><a href="#item1">ES6/ES7</a></li>
+					<li><a href="#item2">jQuery</a></li>
+					<li><a href="#item3">Angular</a></li>
+					<li><a href="#item4">Node.js</a></li>
+					<li><a href="#item5">React.js</a></li>
+					<li><a href="#item6">Vue.js</a></li>
+					<li><a href="#item7">TypeScript.js</a></li>
+					
+					
+				</ul>
+				<div>
+					<a href="http://tympanus.net/Development/AudioPlayer/">&larr; Previous Demo: Responsive Audio Player</a>
+					<a href="http://tympanus.net/codrops/?p=12795">Back to the Codrops Article</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+									<div class="bb-item" id="item5">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Javascript (ES6/ES7)  Interview Question & Answers</h2>
+								<button class="accordion"> What is ES or ECMAScript or ES6? </button>
+<div class="panel">
+  <p>When JavaScript was developed, the
+name itself was chosen for marketing
+reasons since Java was getting popular
+around the time. But to standardize the
+language and its specification, it was
+submitted to ECMA international
+(European Computer Manufacturers
+Association), a body for
+standardization of information and
+communication technology. Eventually
+the language standardized in ECMA is
+called ECMAScript of ES. The first
+edition was released on June 1997.
+<br>
+The ES6 is the sixth edition of the
+language and was released on June
+2015. It was initally known as 
+ECMAScript 6 (ES6) and later
+renamed to ECMAScript 2015. This
+edition includes many new features
+like class, modules, iterators, for/of
+loop, arrow functions, typed arrays,
+promises, reflection.<br>
+In the next year on June 2016,
+ECMAScript 6 (ES6) was released and
+later renamed to ECMAScript 2015.
+This edition intended to continue the
+themes of language reform, includes
+two new features: exponentiation
+operator (**) and
+Array.prototype.includes.
+<br>
+And then on June 2017, ECMAScript
+2017 (ES2017), the eighth edition
+released which includes features for
+concurrency and atomics, syntactic
+integration with promises
+(async/await).</p>
+</div>
+								<button class="accordion"> What are some of the features of ES6? </button>
+<div class="panel">
+  <p>Some of the new features of ES6 are:
+  <br>
+• Support for constants (also known
+as “immutable variables”)
+<br>
+• Block-Scope support for both
+variables, constants, functions
+<br>
+• Arrow functions
+<br>
+• Extended Parameter Handling
+<br>
+• Template Literals and Extended
+Literals
+<br>
+• Enhanced Regular Expression
+<br>
+• Destructuring Assignment
+<br>
+• Modules, Classes, Iterators,
+Generators
+<br>
+• Enhanced Object Properties
+<br>
+• Support for Map/Set &
+WeakMap/WeakSet
+<br>
+• Promises, Meta-Programming
+,Internationalization and
+Localization</p>
+</div>
+								<button class="accordion"> What is let and const? And how it differs from var?</button>
+<div class="panel">
+  <p>Previously, when we declare any
+variable using var, it was function
+scoped. Meaning the variable can be
+accessed within the function. This
+leads to wrap the code in a function
+whenever we need to create a new
+scope.
+<br>
+But let and const uses block scoping.
+This means the variable declared using
+these keywords only exist within the
+innermost block that surronds them.
+If we declare a let variable inside a
+block like if condition, for loop, it can
+be accessed within the block.
+Also we can not re-declare the same
+variable with the same scope.
+<br>
+Unlike const, const is immutable. It
+means the value must be given at the
+time of the declaration and it can not
+be re-assigned or changes. Although we
+can not change the value of
+the const but we can mutate them.
+It is always a good practice to
+use let and const over var and if we are
+not changing the value of the variable
+we should use const.</p>
+</div>
+								<button class="accordion"> What is Arrow function? What are all its uses? How it differs from normal function?</button>
+<div class="panel">
+  <p>Arrow functions are a short-hand
+notation for writing functions in ES6.
+The arrow function definition consists
+of a parameter list ( ... ), followed by
+the =>marker and a function body. For
+single-argument functions, the
+parentheses may be omitted.
+<br>
+If the arrow function is implemented
+with “concise body” (without {}), it
+does not need an
+explicit return statement. Note the
+omitted { } after the =>.
+Arrow functions behavior
+with this keyword varies from that of
+normal functions. Each function in
+JavaScript defines its own this context
+but arrow functions capture
+the this value of the nearest enclosing
+context.
+<br>
+There are four fundamental differences
+between arrow functions
+and function functions
+<br>
+• They close over this, and do not
+have their own versions.
+<br>
+• They can have a concise body
+(without { }) rather than a verbose
+one (but they can have a verbose
+body as well).
+<br>
+• They cannot be used as
+constructors. E.g., you can’t
+use new with an arrow function.
+Hence arrow functions do not have
+a protoype property on them.
+<br>
+• There is no generator syntax for
+arrow functions. E.g., there is no
+arrow equivalent to function *foo()
+{ ... }.
+</p>
+</div>
+								<button class="accordion"> What are all the new changes in Object literal notations in ES6?</button>
+<div class="panel">
+  <p>ES6 allows declaring object literals by
+providing shorthand syntax for
+initializing properties from variables 
+and defining function methods. It also
+enables the ability to have computed
+property keys in an object literal
+definition.</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:500px;">
+								<h2>jQuery Interview Question & Answers</h2>
+								<button class="accordion">How is jQuery different to Javascript?</button>
+<div class="panel">
+  <p>Well, jQuery is not a programming language, but a well written JavaScript code (a framework). It is a library built with Javascript.
+Javascript is the core programming language. It is very popular because it abstracts away cross-browser compatibility issues and
+emphasises unobtrusive and callback-driven Javascript programming.</p>
+</div>
+								<button class="accordion">What is $() in jQuery?</button>
+<div class="panel">
+  <p>The $() function is an alias of jQuery() function. $() function is used to wrap any object into jQuery object, which then
+allows you to call various method defined in the jQuery object.</p>
+</div>
+								<button class="accordion">What are jQuery events?</button>
+<div class="panel">
+  <p>Events are actions performed on specific conditions. When we perform these actions on an HTML page, we can do whatever
+we want. We then use event handlers to perform the action. Some important handlers are for example: bind(), unbind(),
+blur(), off(), hover(), on(), one(), ready(),trigger() etc...</p>
+</div>
+								<button class="accordion">What is called chaining?</button>
+<div class="panel">
+  <p>Chaining is used to connect multiple events and functions in a selector. It means specifying multiple functions and/or selectors
+to an element.</p>
+</div>
+								<button class="accordion">What is the difference between event.PreventDefault and event.stopPropagation?</button>
+<div class="panel">
+  <p>In short, preventDefault(): Stops the default action of an element from happening. event.stopPropagation():
+Prevents the event from bubbling up the DOM tree, thus preventing any parent handlers from being notified of the event.</p>
+</div>
+								<button class="accordion">How can we hide an image on a button click using jQuery?</button>
+<div class="panel">
+  <p>We can have a click handler and then the hide method applied to the image:
+  <br>
+$("#button").click(function(){
+<br>
+$("#image").hide();
+<br>
+});</p>
+</div>
+								<button class="accordion"> What is AJAX in jQuery?</button>
+<div class="panel">
+  <p>AJAX stands for “Asynchronous JavaScript and XML”. AJAX is about exchanging data with a server, without reloading the
+whole page. It is a technique for creating fast and dynamic web pages.
+<br>
+• $.ajax() - Performs an async AJAX request.
+<br>
+• $.get() - Loads data from a server using an AJAX HTTP GET request.
+<br>
+• $.post() - Loads data from a server using an AJAX HTTP POST request</p>
+</div>
+								<button class="accordion">What Is the Format of an AJAX Request?</button>
+<div class="panel">
+  <p>An AJAX request can be in any of the following formats:
+  <br>
+• Text File
+<br>
+• HTML
+<br>
+• JSON Object</p>
+</div>
+								<button class="accordion">How can you find out that an AJAX request has been completed?</button>
+<div class="panel">
+  <p>We can use the ReadyState property to check whether AJAX request has been completed. If the property is equal to 4, the request
+has been completed and data is now available.</p>
+</div>
+								<button class="accordion">Do AJAX requests retain PHP session info, when calling multiple times?</button>
+<div class="panel">
+  <p>Yes, PHP retains the session info over multiple ajax calls. The duration of the php session depends on SESSION configuration.</p>
+</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:500px;">
+								<h2>Angular Interview Question & Answers</h2>
+								<button class="accordion">What’s the basic syntax of a Decorator in Angular?</button>
+<div class="panel">
+  <p>@() with optional parameters.</p>
+</div>
+								<button class="accordion">What is [(ngModel)] used for?</button>
+<div class="panel">
+  <p>Two-way data binding.</p>
+</div>
+								<button class="accordion">What are the basic parts of an Angular application?</button>
+<div class="panel">
+  <p>Modules, Component, Data Binding, Template, Directives, Dependency Injection, Services,Routing.</p>
+</div>
+								<button class="accordion">Tell me about a time you received feedback on a task.</button>
+<div class="panel">
+  <p>This is a typical open-ended question. The candidate should demonstrate they can accept,
+understand and act on feedback.</p>
+</div>
+								<button class="accordion">Describe how you would approach solving (some problem) on a high level?</button>
+<div class="panel">
+  <p>In this question, the problem should be directly related to the work the candidate will
+actually be doing. You aren’t looking for a perfect answer or even necessarily a correct answer.
+Instead, listen to how they approach solving a problem, their ability to break a problem down into
+parts, and if they can anticipate problems.</p>
+</div>
+								<button class="accordion">What function is called when an object is created in TypeScript? What is it’s basic syntax in TypeScript code?</button>
+<div class="panel">
+  <p>The constructor function is called. It’s syntax is: Constructor(){}.</p>
+</div>
+								<button class="accordion">In Angular, how can you interact between Parent and Child components?</button>
+<div class="panel">
+  <p>When passing data from Parent to Child component, you can use the @Input decorator in
+the Child component. When passing data from Child to Parent component, you can use the @Output
+decorator in the Child component.</p>
+</div>
+								<button class="accordion">What is the sequence of Angular Lifecycle Hooks?</button>
+<div class="panel">
+  <p>OnChange() – OnInit() – DoCheck() – AfterContentInit() – AfterContentChecked() –
+AfterViewInit() – AfterViewChecked() – OnDestroy().</p>
+</div>
+								<button class="accordion">What is the main difference between constructor and ngOnInit?</button>
+<div class="panel">
+  <p>The constructor is a feature of the class itself, not Angular. The main difference is that
+Angular will launch ngOnInit after it has finished configuring the component. Meaning, it is a signal
+through which the @Input() and other banding properties and decorated properties are available in
+ngOnInit, but are not defined within the constructor by design.</p>
+</div>
+								<button class="accordion">What is the main difference between constructor and ngOnInit?</button>
+<div class="panel">
+  <p>The constructor is a feature of the class itself, not Angular. The main difference is that
+Angular will launch ngOnInit after it has finished configuring the component. Meaning, it is a signal
+through which the @Input() and other banding properties and decorated properties are available in
+ngOnInit, but are not defined within the constructor by design.</p>
+</div>
+                               
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Node.js Interview Question & Answers</h2>
+								<button class="accordion">What is node.js?</button>
+<div class="panel">
+  <p>Node.js is a Server side scripting which is used to build scalable programs. Its multiple advantages
+over other server side languages, the prominent being non-blocking I/O.</p>
+</div>
+								<button class="accordion">How node.js works?</button>
+<div class="panel">
+  <p>Node.js works on a v8 environment, it is a virtual machine that utilizes JavaScript as its scripting
+language and achieves high output via non-blocking I/O and single threaded event loop.</p>
+</div>
+								<button class="accordion">What do you mean by the term I/O ?</button>
+<div class="panel">
+  <p>I/O is the shorthand for input and output, and it will access anything outside of your application. It will
+be loaded into the machine memory to run the program, once the application is started.</p>
+</div>
+								<button class="accordion">What does event-driven programming mean?</button>
+<div class="panel">
+  <p>In computer programming, event driven programming is a programming paradigm in which the flow
+of the program is determined by events like messages from other programs or threads. It is an
+application architecture technique divided into two sections 
+<br>
+1) Event Selection
+<br>
+2) Event Handling.</p>
+</div>
+								<button class="accordion">Where can we use node.js?</button>
+<div class="panel">
+  <p>Node.js can be used for the following purposes
+  <br>
+a) Web applications ( especially real-time web apps )
+<br>
+b) Network applications
+<br>
+c) Distributed systems
+<br>
+d) General purpose applications
+</p>
+</div>
+								<button class="accordion">What is the advantage of using node.js?</button>
+<div class="panel">
+  <p>a) It provides an easy way to build scalable network programs
+b) Generally fast
+<br>
+c) Great concurrency
+<br>
+d) Asynchronous everything
+<br>
+e) Almost never blocks</p>
+</div>
+                                <button class="accordion">What are the two types of API functions in Node.js ?</button>
+<div class="panel">
+  <p>The two types of API functions in Node.js are
+a) Asynchronous, non-blocking functions
+<br>
+b) Synchronous, blocking functions</p>
+</div>
+                                <button class="accordion">What is control flow function?</button>
+<div class="panel">
+  <p>A generic piece of code which runs in between several asynchronous function calls is known as
+control flow function.</p>
+</div>
+                                <button class="accordion">Explain the steps how “Control Flow” controls the functions calls?</button>
+<div class="panel">
+  <p>a) Control the order of execution
+  <br>
+b) Collect data
+<br>
+c) Limit concurrency
+<br>
+d) Call the next step in program</p>
+</div>
+                                <button class="accordion">Why Node.js is single threaded?</button>
+<div class="panel">
+  <p>For async processing, Node.js was created explicitly as an experiment. It is believed that more
+performance and scalability can be achieved by doing async processing on a single thread under
+typical web loads than the typical thread based implementation.</p>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:800px;">
+								<h2>React.js Interview Question & Answers</h2>
+								<button class="accordion">Write an example of a simple HTML document with some header information and some page content.</button>
+<div class="panel">
+  <p>HTML documents are different, but they follow a basic structure of head and body. The
+different sections are marked with tags such as: DOCTYPE, html, head, title, meta, body, h1, p.
+For example:
+<!DOCTYPE html>
+<br>
+<html>
+<br>
+<head>
+<br>
+<title>Page Title</title>
+<br>
+<meta charset="UTF-8">
+<br>
+<meta name="description" content="Page description">
+<br>
+</head>
+<br>
+<body>
+<br>
+<h1>Interview Example Web Page</h1>
+<br>
+<p>Some content goes here</p>
+<br>
+</body>
+<br>
+</html>
+</p>
+</div>
+								<button class="accordion"> Briefly describe ReactJS in one or two sentences</button>
+<div class="panel">
+  <p>ReactJS is an open-source Javascript library. It is designed for building dynamic single
+page applications that require less coding than doing everything yourself in Javascript. Sometimes it
+is called a framework, but that’s a question of terminology.</p>
+</div>
+								<button class="accordion">What is ReactJS? How does it compare to other JavaScript frameworks?</button>
+<div class="panel">
+  <p>Here you are getting a feel for the candidate’s knowledge, ideas and opinions of what
+React is, and how it fits into the JavaScript ecosystem. Some points to look out for:
+<br>
+● React is an open-source JavaScript library maintained by Facebook
+<br>
+● It’s designed for building dynamic and interactive UIs (user interfaces) for web and mobile
+applications
+<br>
+● It is used to help you build UI components
+<br>
+● Sometimes seen as the ‘View’ in the ‘Model-View-Controller’ (MVC) architecture.
+<br>
+● This means it is a relatively small framework (compared to, say, Angular, which takes care of
+the whole front-end) and can be used easily with other libraries and integrated into many
+applications
+<br>
+● React isn’t as opinionated about an application’s architecture as other frameworks like
+Angular and Vue.js
+<br>
+● Very strong community with many supporting tools and packages</p>
+</div>
+								<button class="accordion">How would you learn about a new Javascript library?</button>
+<div class="panel">
+  <p>Web development is changing all the time, and developers need to be able to learn
+constantly. Here you are finding out how the candidate approaches the learning process. You want
+to see that they have an idea of what information they will need and where to find it. For Javascript
+libraries, that means looking up online tutorials and digging into the documentation</p>
+</div>
+								<button class="accordion"> Describe a time you received feedback on a programming task. How did it help you become a better programmer?</button>
+<div class="panel">
+  <p> This is a typical open-ended question. The candidate should demonstrate they can accept,
+understand and act on feedback.</p>
+</div>
+								<button class="accordion">A common type of problem we have to solve at this company is _____. How might you think about finding a solution?</button>
+<div class="panel">
+  <p> In this question, the problem should be directly related to the work the candidate will
+actually be doing day-to-day working for you. You aren’t looking for a perfect answer or even
+necessarily a correct answer. Instead, listen to how they approach solving a problem, their ability to
+break a problem down into parts, and if they can anticipate problems.</p>
+</div>
+								<button class="accordion">List some advantages and limitations of ReactJS?</button>
+<div class="panel">
+  <p>Advantages:
+  <br>
+  ● Free and Open Source
+  <br>
+● Highly adaptable
+<br>
+● Virtual DOM makes it extremely efficient
+<br>
+● JSX increases code reliability and makes mixing HTML and JavaScript much easier
+<br>
+● Makes UI testing easier
+<br>
+● Developer tools such as the React.js chrome extension for debugging
+<br>
+● More SEO friendly that some other JavaScript frameworks
+<br>
+● Large supporting community
+<br>
+Limitations:
+<br>
+● Library, not a framework. It handles the UI only. You need to use other libraries for other
+parts of your application
+<br>
+● No set way to structure applications, meaning you have to figure it out for yourself
+<br>
+● Its flexibility can easily let developers make poor choices
+<br>
+● JSX and inline templating can make the code quite complex, especially for novice
+developers
+<br>
+● A different way of thinking and learning curve compared to other frameworks like Angular
+
+</p>
+</div>
+								<button class="accordion">What are components in React?</button>
+<div class="panel">
+  <p>ReactJS is component-based. That means that components make up the building blocks of
+a ReactJS application by splitting the UI up into many separate, reusable pieces. Components can
+be thought of like JavaScript functions. They accept inputs called props and return React elements
+that describe what should be presented to the user.</p>
+</div>
+								<button class="accordion">What does render() do?</button>
+<div class="panel">
+  <p>: Every React component has a render() function. Render() returns exactly one React element
+that represents a native DOM component. Multiple HTML elements must be grouped inside one tag,
+for example, <group>.</p>
+</div>
+								<button class="accordion">What’s your experience with the Flux architecture pattern?</button>
+<div class="panel">
+  <p>Many ReactJS applications use Flux architecture rather than MVC. Its key feature is that it
+enforces unidirectional data flow. The three major parts of a flux application are the:
+<br>
+1. Dispatcher
+<br>
+2. Stores
+<br>
+3. View (React components)</p>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="bb-item" id="item6">
+						<div class="content">
+							<div class="scroller" >
+								<h2>Vue.js Interview Question & Answers</h2>
+								<button class="accordion"> What is Vue.js? What are the advantages of it?</button>
+<div class="panel">
+  <p>Vue is a progressive
+framework used to building user
+interfaces.The core library is focused
+on the view layer only, and is easy to
+pick up and integrate with other
+libraries or existing projects.
+Following are the advantages of using
+Vue.js.
+<br>
+• Small in size — The size of this
+framework is 18 to 21KB and it
+takes no time for the user to
+download and use it.
+<br>
+• Easy to Understand — One of the
+reasons for the popularity of this
+framework is that it is quite easy to
+understand. The user can easily add
+Vue.js to his web project because of
+its simple structure.
+<br>
+• Simple Integration — Vue.js can be
+integrated with the existing
+applications easily.
+<br>
+• Flexibility — This flexibility also
+makes it easy to understand for the
+developers of React.js, Angular.js,
+and any other new JavaScript
+framework.
+<br>
+• Virtual DOM — It uses virtual DOM
+similar to other existing
+frameworks such as ReactJS,
+Ember etc. Virtual DOM is a lightweight in-memory tree
+representation of the original
+HTML DOM and updated without
+affecting the original DOM.
+<br>
+• Components — Used to create
+reusable custom elements in VueJS
+applications.
+<br>
+• Two-Way Communication — Vue.js
+also facilitates two way 
+communications because of its
+MVVM architecture which makes it
+quite easy to handle HTML blocks.</p>
+</div>
+								<button class="accordion">What are all the life cycle hooks in Vue instance?</button>
+<div class="panel">
+  <p>Each Vue instance goes through series
+of steps when they are created,
+mounted and destroyed. Along the
+way, it will also runs functions called
+life cycle hooks, giving us the
+opportunity to add our own code at
+specific stage. Below are the events, a
+Vue instance goes through.
+<br>
+• beforeCreate — The first hook in
+the creation hooks. They allow us to
+perform actions before our
+component has even been added to
+the DOM. We do not have access to
+the DOM inside of this.
+<br>
+• created — This hook can be used
+to run code after an instance is
+created. We can access the
+reactive data. But templates and
+Virtual DOM have not yet been
+mounted or rendered.
+<br>
+• beforeMount — The beforeMount
+hook runs right before the initial
+render happens and after the
+template or render functions have
+been compiled. Most likely we’ll
+never need to use this hook.
+<br>
+• mounted — We will have full
+access to the reactive component,
+templates, and rendered DOM. This
+is the most frequently used hook.
+<br>
+• beforeUpdate — This hook runs
+after data changes on our
+component and the update cycle
+begins. But runs right before the
+DOM is patched and re-rendered.
+<br>
+• updated — This hook runs after
+data changes on our component
+and the DOM re-renders. If we need
+to access the DOM after a property
+change, here is probably the safest
+place to do it.
+<br>
+• beforeDestroy — This hook will
+run right before tearing down the
+instance. If we need to clean up
+events or reactive subscriptions,
+this is the right place to do it.
+• destroyed — This hook will be
+used to do any last minute clean up.</p>
+</div>
+								<button class="accordion"> What is the difference between v-show and v-if directives?</button>
+<div class="panel">
+  <p>Below are some of the main differences
+between between v-show and vifdirectives:
+<br>
+• v-if only renders the element to the
+DOM if the expression passes 
+whereas v-show renders all elements
+to the DOM and then uses the CSS
+display property to show/hide
+elements based on expression.
+<br>
+• v-if supports v-else and v-elseif directives whereas v-show doesn't
+support else directives.
+<br>
+• v-if has higher toggle costs since it
+add or remove the DOM every time
+while v-show has higher initial
+render costs. i.e, v-show has a
+performance advantage if the
+elements are switched on and off
+frequently, while the v-if has the
+advantage when it comes to initial
+render time.
+<br>
+• v-if supports tab but v-show doesn't
+support.</p>
+</div>
+								<button class="accordion"> What is key in Vue.js?</button>
+<div class="panel">
+  <p>In order to render DOM elements more
+efficiently, Vue.js reuses the elements
+instead of creating them from scratch
+every time. This default mode is
+efficient, but in some cases it may
+causes problems. For example, if you
+try to render the same input element in
+both v-if and v-else blocks then it
+holds the previous value as below:</p>
+</div>
+								<button class="accordion"> Why should not use if and for directives together on the same element?</button>
+<div class="panel">
+  <p>It is recommended not to use v-if on
+the same element as v-for. Because vfor directive has a higher priority 
+than v-if. There are two common cases
+where this can be tempting:
+<br>
+• To filter items in a list (e.g. vfor="user in users" vif="user.isActive"). In these cases,
+replace users with a new computed
+property that returns your filtered
+list (e.g. activeUsers).
+<br>
+• To avoid rendering a list if it should
+be hidden (e.g. v-for="user in
+users" v-if="shouldShowUsers"). In
+these cases, move the v-if to a
+container element (e.g. ul, ol).</p>
+</div>
+								<button class="accordion"> What is the difference between comptuted properties and methods?</button>
+<div class="panel">
+  <p>Computed properties are getter
+function in Vue instance rather than
+actual methods. we can define the
+same function as a method instead.
+<br> 
+However, the difference is that
+computed properties are cached based
+on their dependencies. A computed
+property will only re-evaluate when
+some of its dependencies have
+changed. In comparison, a method
+invocation will always run the function
+whenever a re-render happens.
+<br>
+When we have to compute something
+by doing lot of computations like
+looping through a large array, it is best
+to use computed properties instead of a
+method. Without caching, we would
+spend more time than necessary. When
+we do not want cache, we can use a
+method instead.
+</p>
+</div>
+								<button class="accordion">What is $parent in Vue?</button>
+<div class="panel">
+  <p>Similar to $root, the $parent property
+can be used to access the parent
+instance from a child.
+<br>
+Although it provides direct access, it
+makes the application hard to test and
+debug. And we can not easily find out
+the where the mutation come from.
+<br>
+Vue also provides $child just
+like $parent, but it can be used to access
+the child instance.
+</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item7">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>TypeScript.js Interview Question & Answers</h2>
+								<button class="accordion"> What is TypeScript? Why should we use it?</button>
+<div class="panel">
+  <p>TypeScript is a typed superset of
+JavaScript that compiles to plain
+JavaScript which runs on any browser
+or JavaScript engine.
+<br>
+TypeScript offers support for the latest
+JavaScript features and also has some
+additional features like static typing,
+object oriented programming and
+automatic assignment of constructor.</p>
+</div>
+								<button class="accordion"> What are Types in TypeScript?</button>
+<div class="panel">
+  <p>The type represents the type of the
+value we are using in our programs.
+TypeScript supports simplest units of
+data such as numbers, strings, boolean
+as well as additional types like enum,
+any, never.
+<br>
+In TypeScript, we are declaring a
+variable with its type explicitly by
+appending the : with the variable name
+followed by the type.
+<br>
+The reason adding types are:
+<br>
+• Types have proven ability to
+enhance code quality and
+understandability.
+<br>
+• It’s better for the compiler to catch
+errors than to have things fail at
+runtime.<br>
+• Types are one of the best forms of
+documentation we can have.
+</p>
+</div>
+								<button class="accordion">What is Type assertions in TypeScript?</button>
+<div class="panel">
+  <p>A type assertion is like a type cast in
+other languages, but performs no
+special checking or restructuring of
+data. It has no runtime impact, and is
+used purely by the compiler.
+TypeScript assumes that we have
+performed any special checks that we
+need.</p>
+</div>
+								<button class="accordion"> What is as syntax in TypeScript?</button>
+<div class="panel">
+  <p>The as is additional syntax for Type
+assertion in TypeScript. The reason for
+introducing the as-syntax is that the
+original syntax (<type>) conflicted with
+JSX.
+When using TypeScript with JSX,
+only as-style assertions are allowed.</p>
+</div>
+								<button class="accordion"> What is Compilation Context?</button>
+<div class="panel">
+  <p>The compilation context is basically
+grouping of the files that TypeScript
+will parse and analyze to determine
+what is valid and what isn’t. Along with
+the information about which files, the
+compilation context contains
+information about which
+compiler options. A great way to define
+this logical grouping is using
+a tsconfig.json file.
+A tsconfig.json might look like the
+following snippet:</p>
+</div>
+								<button class="accordion">Can an interface extends a class just like a classimplements interface?</button>
+<div class="panel">
+  <p>Yes, an interface extends a class, when
+it does it inherits the members of the
+class but not their implementations.
+Interfaces inherit even the private and
+protected members of a base class. This
+means that when you create an
+interface that extends a class with
+private or protected members, that
+interface type can only be implemented
+by that class or a subclass of it.</p>
+</div>
+								<button class="accordion"> What are all the other access modifiers that TypeScript supports?</button>
+<div class="panel">
+  <p>TypeScript supports access
+modifiers public, private and protected
+which determine the accessibility of
+a class member as given below:
+<br>
+• public - All the members of the
+class, its child classes, and the
+instance of the class can access.
+<br>
+• protected - All the members of the
+class and its child classes can access
+them. But the instance of the class
+can not access.<br>
+• private - Only the members of the
+class can access them.
+<br>
+If an access modifier is not specified it
+is implicitly public as that matches the
+convenient nature of JavaScript.
+Also note that at runtime (in the
+generated JS) these have no
+significance but will give you compile
+time errors if you use them incorrectly.</p>
+</div>
+								<button class="accordion"> What is Contextual typing?</button>
+<div class="panel">
+  <p>TypeScript compiler can figure out the
+type if you have types on one side of 
+the equation but not the other. For
+example, we can re-write the previous
+example function as follow:
+<br>
+Note that we can omit the typings on
+the right side of the equal since it can
+be figured out automatically by
+TypeScript. This helps cut down on the
+amount of effort to keep our program
+typed.
+</p>
+</div>
+								<button class="accordion">What is Generic Class?</button>
+<div class="panel">
+  <p>A generic class has a similar shape to a
+generic interface. Generic classes have
+a generic type parameter list in angle
+brackets (<>) following the name of the
+class.</p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item8">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Bootstrap4 Interview Question & Answers</h2>
+								<button class="accordion">What Is Bootstrap 4?</button>
+<div class="panel">
+  <p>Bootstrap 4 is the newest version of Bootstrap, which
+is the most popular HTML, CSS, and JavaScript
+framework for developing responsive, mobile-first
+web sites. Bootstrap 4 is completely free to download
+and use!</p>
+</div>
+								<button class="accordion">When Bootstrap 4 Release Date?</button>
+<div class="panel">
+  <p>Bootstrap 4 alpha 1 was released on 19th August 2015.
+Since then there have been many alpha releases. And
+finally after that on 10th August 2017, Bootstrap
+released the first beta for the version 4 of Bootstrap.
+Bootstrap 4 Beta 2 was released on October 19th,
+2017.</p>
+</div>
+								<button class="accordion">Why Use Bootstrap 4?</button>
+<div class="panel">
+  <p>Easy to use: Anybody with just basic knowledge of
+HTML and CSS can start using Bootstrap 4.
+<br>
+Responsive features: Bootstrap's responsive CSS
+adjusts to phones, tablets, and desktops.
+<br>
+Mobile-first approach: In Bootstrap 4, mobile-first
+styles are part of the core framework.<br>
+Browser compatibility: Bootstrap 4 is compatible
+with all modern browsers (Chrome, Firefox, Internet
+Explorer 10+, Safari, and Opera).</p>
+</div>
+								<button class="accordion">How Many Bootstrap 4 Media Objects?</button>
+<div class="panel">
+  <p>Bootstrap media object component provides an easy
+way to align text and media objects when presenting
+them alongside each other. It allows you to quickly
+and easily float media to the left and/or right of a
+content block.
+<br>
+Only two classes are required: The wrapping .media
+and the .media-body around your content. Optional
+padding and margin can be controlled through spacing
+utilities</p>
+</div>
+								<button class="accordion">Explain Bootstrap 4 Images?</button>
+<div class="panel">
+  <p>Bootstrap provides classes that can be used when
+working with the img element and examples for opting
+images into responsive behavior and adds lightweight
+styles to them all classes.
+<br>
+o Responsive images
+<br>
+o Thumbnail
+<br>
+o Aligning Images
+<br>
+o Image Shapes & Corners.</p>
+</div>
+								<button class="accordion">What Is Bootstrap 4 Responsive Images?</button>
+<div class="panel">
+  <p>Responsive images automatically adjust to fit the size
+of the screen. Bootstrap is made responsive with .imgfluid class to the tag. The .img-fluid class applies
+max-width: 100%; and height: auto; are applied to the
+image so that it scales with the parent element.
+<img src="image.jpg" class="img-fluid"
+alt="responsive Image"></p>
+</div>
+								<button class="accordion">What Is Bootstrap 4 Image Thumbnail?</button>
+<div class="panel">
+  <p>The .img-thumbnail class shapes the image to a
+thumbnail (bordered):
+<img src="image.jpg" class="img-thumbnail"
+alt="thumbnails image" /></p>
+</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item9">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Angular Interview Question & Answers</h2>
+								<button class="accordion">What’s the basic syntax of a Decorator in Angular?</button>
+<div class="panel">
+  <p>@() with optional parameters.</p>
+</div>
+								<button class="accordion">What is [(ngModel)] used for?</button>
+<div class="panel">
+  <p>Two-way data binding.</p>
+</div>
+								<button class="accordion">What are the basic parts of an Angular application?</button>
+<div class="panel">
+  <p>Modules, Component, Data Binding, Template, Directives, Dependency Injection, Services,Routing.</p>
+</div>
+								<button class="accordion">Tell me about a time you received feedback on a task.</button>
+<div class="panel">
+  <p>This is a typical open-ended question. The candidate should demonstrate they can accept,
+understand and act on feedback.</p>
+</div>
+								<button class="accordion">Describe how you would approach solving (some problem) on a high level?</button>
+<div class="panel">
+  <p>In this question, the problem should be directly related to the work the candidate will
+actually be doing. You aren’t looking for a perfect answer or even necessarily a correct answer.
+Instead, listen to how they approach solving a problem, their ability to break a problem down into
+parts, and if they can anticipate problems.</p>
+</div>
+								<button class="accordion">What function is called when an object is created in TypeScript? What is it’s basic syntax in TypeScript code?</button>
+<div class="panel">
+  <p>The constructor function is called. It’s syntax is: Constructor(){}.</p>
+</div>
+								<button class="accordion">In Angular, how can you interact between Parent and Child components?</button>
+<div class="panel">
+  <p>When passing data from Parent to Child component, you can use the @Input decorator in
+the Child component. When passing data from Child to Parent component, you can use the @Output
+decorator in the Child component.</p>
+</div>
+								<button class="accordion">What is the sequence of Angular Lifecycle Hooks?</button>
+<div class="panel">
+  <p>OnChange() – OnInit() – DoCheck() – AfterContentInit() – AfterContentChecked() –
+AfterViewInit() – AfterViewChecked() – OnDestroy().</p>
+</div>
+								<button class="accordion">What is the main difference between constructor and ngOnInit?</button>
+<div class="panel">
+  <p>The constructor is a feature of the class itself, not Angular. The main difference is that
+Angular will launch ngOnInit after it has finished configuring the component. Meaning, it is a signal
+through which the @Input() and other banding properties and decorated properties are available in
+ngOnInit, but are not defined within the constructor by design.</p>
+</div>
+								<button class="accordion">What is the main difference between constructor and ngOnInit?</button>
+<div class="panel">
+  <p>The constructor is a feature of the class itself, not Angular. The main difference is that
+Angular will launch ngOnInit after it has finished configuring the component. Meaning, it is a signal
+through which the @Input() and other banding properties and decorated properties are available in
+ngOnInit, but are not defined within the constructor by design.</p>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item10">
+						<div class="content">
+							<div class="scroller" style="overflow: auto;height:600px;">
+								<h2>Advanced Javascript Interview Question & Answers</h2>
+							    <button class="accordion">What Is The Difference Between Undefined And Not Defined In Javascript?</button>
+<div class="panel">
+  <p></pIn JavaScript, if you try to use a variable that doesn't
+exist and has not been declared, then JavaScript will
+throw an error var name is not defined and script will
+stop executing. However, if you use typeof
+undeclared_variable, then it will return undefined.
+<br>
+Before getting further into this, let's first understand
+the difference between declaration and definition.
+<br>
+Let's say var x is a declaration because you have not
+defined what value it holds yet, but you have
+declared its existence and the need for memory
+allocation.
+<br>
+> var x; // declaring x
+> console.log(x); //output: undefined
+Here var x = 1 is both a declaration and definition
+(also we can say we are doing an initialisation). In
+the example above, the declaration and assignment
+of value happen inline for variable x. In JavaScript,
+every variable or function declaration you bring to
+the top of its current scope is called hoisting.
+<br>
+The assignment happens in order, so when we try to
+access a variable that is declared but not defined yet,
+we will get the result undefined.
+<br>
+var x; // Declaration
+if(typeof x === 'undefined') // Will return true
+If a variable that is neither declared nor defined,
+when we try to reference such a variable we'd get the
+result not defined.
+<br>
+> console.log(y); // Output: ReferenceError: y is not
+defined>
+</div>
+								<button class="accordion">What Will Be The Output Of The Code Below? var Y = 1; if (function F(){}) { y += Typeof F; } console.log(y);</button>
+<div class="panel">
+  <p>The output would be 1undefined. The if condition
+statement evaluates using eval, so eval(function
+f(){}) returns function f(){} (which is true).
+<br>
+Therefore, inside the if statement, executing typeof f
+returns undefined because the if statement code
+<br>
+executes at run time, and the statement inside the if
+condition is evaluated during run time.
+<br>
+var k = 1;
+<br>
+if (1)
+<br>
+{
+<br>
+eval(function foo(){});
+<br>
+k += typeof foo;
+<br>
+}
+<br>
+console.log(k);
+<br>
+The code above will also output 1undefined.
+<br>
+var k = 1;
+<br>
+if (1)
+<br>
+{
+<br>
+function foo(){};
+<br>
+k += typeof foo;
+<br>
+}
+console.log(k); // output 1function</p>
+</div>
+								<button class="accordion">What Is The Drawback Of Creating True Private Methods In Javascript?</button>
+<div class="panel">
+  <p>One of the drawbacks of creating true private
+methods in JavaScript is that they are very memoryinefficient, as a new copy of the method would be
+created for each instance.
+<br>
+var Employee = function (name, company, salary)
+<br>
+{
+<br>
+this.name = name || ""; //Public attribute
+<br>
+default value is null
+<br>
+this.company = company || ""; //Public attribute
+<br>
+default value is null
+<br>
+this.salary = salary || 5000; //Public attribute
+<br>
+default value is null
+<br>
+// Private method
+<br>
+var increaseSalary = function ()
+<br>
+{
+<br>
+this.salary = this.salary + 1000;
+<br>
+};
+<br>
+// Public method
+<br>
+this.dispalyIncreasedSalary = function()
+<br>
+{
+<br>
+increaseSlary();
+<br>
+console.log(this.salary);
+<br>
+};
+<br>
+};
+<br>
+// Create Employee class object
+<br>
+var emp1 = new Employee("John","Pluto",3000);
+<br>
+// Create Employee class object
+<br>
+var emp2 = new Employee("Merry","Pluto",2000);
+<br>
+// Create Employee class object
+<br>
+var emp3 = new Employee("Ren","Pluto",2500);
+<br>
+Here each instance variable emp1, emp2, emp3 has
+<br>
+its own copy of the increaseSalary private method.
+<br>
+So, as a recommendation, don’t use private methods
+<br>
+unless it’s necessary.</p>
+</div>
+								<button class="accordion">What Will Be The Output Of The Following Code? var Output = (function(x) { Delete X; return X;} )(0); console.log(output);</button>
+<div class="panel">
+  <p>The output would be 0. The delete operator is used
+to delete properties from an object. Here x is not an
+object but a local variable. delete operators don't
+affect local variables.</p>
+</div>
+								<button class="accordion">What Will Be The Output Of TheFollowing Code? var X = 1; var Output = (function() { Delete X; Return X; } )(); console.log(output);</button>
+<div class="panel">
+  <p>The output would be 1. The delete operator is used
+to delete the property of an object. Here x is not an
+object, but rather it's the global variable of type
+number.</p>
+</div>
+								<button class="accordion">What Will Be The Output Of The Code Below? var X = { Foo : 1}; var Output = (function() { delete X.foo; return X.foo; } )(); console.log(output);</button>
+<div class="panel">
+  <p>The output would be undefined. The delete operator
+is used to delete the property of an object. Here, x is
+an object which has the property foo, and as it is a
+self-invoking function, we will delete the foo
+property from object x. After doing so, when we try
+to reference a deleted property foo, the result
+isundefined.
+</p>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>

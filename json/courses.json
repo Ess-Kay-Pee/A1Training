@@ -1,0 +1,79 @@
+var books = { "col1" : [ 
+            { "Name"  : "Web Design/Development(WPT)", "href" : "web-development.php",
+			"sub_heading" : "PHP / Angular / HTML5","syllabus_id" : "web_syllabus", "interview_id" : "web",
+			"alt":"Web Development(PT)", "Images" : "web2.gif" },
+			
+			{ "Name"  : "Mobile App Development(MAPT)", "href" : "mobile-development.php",
+			"sub_heading" : "Andriod / IOS / React Native","syllabus_id" : "mobile_syllabus", "interview_id" : "mobile",
+			"alt":"Mobile App Development(MAPT)", "Images" : "mobile.gif" },
+			
+			{ "Name"  : "Graphic Design(GDPT)", "href" : "graphic-design.php",
+			"sub_heading" : "Photoshop / Illustrator / Coral Draw","syllabus_id" : "graphic_syllabus", "interview_id" : "graphic",
+			"alt":"Graphic Design(GDPT)", "Images" : "graphic.gif" },
+			
+			{ "Name"  : "Data Science(DSPT)", "href" : "data-science.php",
+			"sub_heading" : "Python / R / ML","syllabus_id" : "data-science_syllabus", "interview_id" : "ds",
+			"alt":"Data Science(DSPT)", "Images" : "datascience.jpg" },
+			
+			{ "Name"  : "Java Technologies(JTPT)", "href" : "java.php",
+			"sub_heading" : "Core Java / J2EE / Hibernate / Spring","syllabus_id" : "java_syllabus", "interview_id" : "javainterview",
+			"alt":"Java Technologies(JTPT)", "Images" : "java.png" },
+			
+			{ "Name"  : "PHP Framework", "href" : "php-framework.php",
+			"sub_heading" : "Laravel / CodeIgniter / Symfony / CakePHP / Yii","syllabus_id" : "php_framework", "interview_id" : "php_framework_interview",
+			"alt":"Java Technologies(JTPT)", "Images" : "php-framework.gif" },
+			
+			{ "Name"  : "Digital Marketing(DMPT)", "href" : "digital-marketing.php",
+			"sub_heading" : "SEO / SMM / SMO","syllabus_id" : "dm_syllabus", "interview_id" : "digital",
+			"alt":"Digital Marketing(DMPT)", "Images" : "dm1.gif" },
+
+			{ "Name"  : "Microsoft Office", "href" : "#",
+				"sub_heading" : "Word / Powerpoint / Excel / Access","syllabus_id" : "#", "interview_id" : "#",
+				"alt":"Microsoft Office", "Images" : "ms-office-icon.png" },
+
+			{ "Name"  : "Tally", "href" : "#",
+				"sub_heading" : "Accounting / Goods and Service Tax / ERP","syllabus_id" : "#", "interview_id" : "#",
+				"alt":"Tally", "Images" : "tally.png" },
+
+			{ "Name"  : "Typing", "href" : "#",
+				"sub_heading" : "Begginer / Intermediate / Expert","syllabus_id" : "#", "interview_id" : "#",
+				"alt":"typing", "Images" : "typing-icon.jpg" }],
+												
+			"col2"  : [
+			{ "Name"  : "Javascript/Js Framework(JPT)", "href" : "js-framework.php",
+			"sub_heading" : "Angular / Node.js / React.js / Vue.js / jQuery","syllabus_id" : "js_syllabus", "interview_id" : "js-framework",
+			"alt":"Javascript/Js Framework(JPT)", "Images" : "web1.gif" },
+			
+			{ "Name"  : "Data Structure & Algorithm(JPT)", "href" : "data-structure-algorithm.php",
+			"sub_heading" : "Data Structure / Algorithm","syllabus_id" : "ds_syllabus", "interview_id" : "data-structure",
+			"alt":"Javascript/Js Framework(JPT)", "Images" : "binary_heap_extraction.gif" },
+			
+			{ "Name"  : "Aptitude Training", "href" : "aptitude.php",
+			"sub_heading" : "Verbal / Reasoning / Quantative","syllabus_id" : "aptitude_syllabus", "interview_id" : "apti",
+			"alt":"Aptitude Training", "Images" : "aptitude.png" },
+			
+			{ "Name"  : "Microsoft Technologies(MPT)", "href" : "microsoft-technologies.php",
+			"sub_heading" : "C# / MVC / Sharepoint / ASP.NET / WCF / WPF","syllabus_id" : "dotnet_syllabus", "interview_id" : "micro",
+			"alt":"Microsoft Technologies(MPT)", "Images" : ".net.png" },
+			
+			{ "Name"  : "Database(DPT)", "href" : "database.php",
+			"sub_heading" : "MySql / Oracle / Sql Server / MongoDB","syllabus_id" : "database_syllabus", "interview_id" : "database",
+			"alt":"Database(DPT)", "Images" : "database.png" },
+			
+			{ "Name"  : "Programming", "href" : "c-and-c++.php",
+			"sub_heading" : "C / C++ / Python / IOT / Embedded / VLSI","syllabus_id" : "programming_syllabus", "interview_id" : "programming_interview",
+			"alt":"Programming", "Images" : "c.png" },
+
+			{ "Name"  : "Game Development", "href" : "#",
+				"sub_heading" : "Android","syllabus_id" : "#", "interview_id" : "#",
+				"alt":"Game Development", "Images" : "android-icon.png" },
+
+			{ "Name"  : "Robotics", "href" : "#",
+			"sub_heading" : "Arduino / Fortex / Automation / Structural Engineering / Robot Framework","syllabus_id" : "#", "interview_id" : "#",
+			"alt":"Robotics", "Images" : "robotics-icon.jpeg" },
+			
+			{ "Name"  : "SAP Training(SPT)", "href" : "sap.php",
+			"sub_heading" : "ABAP / FICO / HANA / MM / SD / HR","syllabus_id" : "sap_syllabus", "interview_id" : "sap_interview",
+			"alt":"SAP Training(SPT)", "Images" : "sap.png" }]
+         }  
+ var i = 0;

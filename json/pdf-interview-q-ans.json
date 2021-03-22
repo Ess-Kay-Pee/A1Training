@@ -1,0 +1,87 @@
+
+var myObj, i, j, x = "";
+interview = {
+  "ebooks": [
+    {"id":"web",
+	"pdf":["html/html-interview-questions-and-answers.pdf", 
+	"html/Web Developer Interview Questions And Answers.pdf","bootstrap4/bootstrap4-converted.pdf",
+	"bootstrap 3/bootstrap 3 q-a.pdf","html5/html5 q-a.pdf","php/php inter q-a.pdf",
+	"json/top-19-json-interview-questions.pdf","css&css3/csscascading-style-sheet-interview-questions.pdf","css&css3/css3-q-a.pdf"],
+	"heading" : ["Download HTML Interview(Q&A)/pdf","Download Web Developer Interview(Q&A)/pdf",
+	"Download Bootstrap4 Interview(Q&A)/pdf","Download Bootstrap3 Interview(Q&A) /pdf",
+	"Download HTML5 Interview(Q&A)/pdf","Download PHP Interview(Q&A)/pdf",
+	"Download JSON Interview(Q&A)/pdf","Download CSS And CSS3 Interview(Q&A)","Download CSS3 Interview(Q&A)/pdf"]},
+	
+	{"id":"graphic",
+	"pdf":["photoshop/adobe-photoshop-interview-questions.pdf", 
+	"illustrator/adobe-illustrator-interview-questions.pdf","coraldraw/coraldraw interview questions.pdf"],
+	"heading" : ["Download Photoshop Interview(Q&A)/pdf","Download Illustrator Interview(Q&A)/pdf",
+	"Download Coraldraw Interview(Q&A)/pdf"]},
+	
+	{"id":"ds",
+	"pdf":["python/python.pdf", 
+	"r/r.pdf","data-science/datascience.pdf","machine/machine-learning.pdf"],
+	"heading" : ["Download Python Interview(Q&A)/pdf","Download R Programming Interview(Q&A)/pdf",
+	"Download Data Science Interview(Q&A)/pdf","Download Machine Learning Interview(Q&A)/pdf"]},
+	
+	{"id":"apti",
+	"pdf":["aptitude/aptitude-test-paper.pdf", 
+	"aptitude/How-to-Prepare-for-Quantitative-Aptitude-Arun-Sharma-6th-Edition.pdf",
+	"aptitude/logical-reasoning-questions.pdf","aptitude/Quantitative Aptitude and Reasoning.pdf","aptitude/verbal_and_nov-verbal.pdf"],
+	"heading" : ["Download aptitude-test-paper pdf","Download How-to-Prepare-for-Quantitative-Aptitude-Arun-Sharma-6th-Edition pdf",
+	"Download logical-reasoning-questions pdf","Download Quantitative Aptitude and Reasoning pdf","Download Test of Reasoning – Verbal  Non-Verbal - & General Intelligence"]},
+	
+	{"id":"js-framework",
+	"pdf":["javascript/javascript.pdf", 
+	"javascript/jquery.pdf","javascript/angular.pdf","javascript/nodejs.pdf","javascript/vuejs.pdf"],
+	"heading" : ["Download Javascript Interview(Q&A)/pdf","Download jQuery Interview(Q&A)/pdf",
+	"Download Angular Interview(Q&A)/pdf","Download Node JS Interview(Q&A)/pdf","Download Vue JS Interview(Q&A)/pdf"]},
+	
+	{"id":"programming_interview",
+	"pdf":["cpp/c.pdf","cpp/c++.pdf","python/python.pdf","iot/iot.pdf","embedded/embedded_system.pdf","vlsi/vlsi.pdf"],
+	"heading" : ["Download C Programming Interview(Q&A)/pdf","Download C++ Interview(Q&A)/pdf",
+	"Download Python Interview(Q&A)/pdf","Download IOT Interview(Q&A)/pdf",
+	"Download Embedded Systems Interview(Q&A)/pdf","Download VLSI Design Interview(Q&A)/pdf"]},
+	
+	{"id":"sap_interview",
+	"pdf":["sap/sap-abap.pdf","sap/sap-hana.pdf","sap/sap-sd.pdf","sap/sap-mm.pdf","sap/sap-fico.pdf",
+	"sap/sap-hr.pdf"],
+	"heading" : ["Download SAP ABAP Interview(Q&A)/pdf","Download SAP HANA Interview(Q&A)/pdf",
+	"Download SAP SD Interview(Q&A)/pdf","Download SAP MM Interview(Q&A)/pdf","Download SAP FICO Interview(Q&A)/pdf","Download SAP HR Interview(Q&A)/pdf"]},
+	
+	{"id":"php_framework_interview",
+	"pdf":["php-framework/laravel.pdf", 
+	"php-framework/cakephp.pdf","php-framework/symfony.pdf","php-framework/codeigniter.pdf","php-framework/yii.pdf"],
+	"heading" : ["Download Larvel Interview(Q&A)/pdf","Download CakePHP Interview(Q&A)/pdf",
+	"Download Symfony Interview(Q&A)/pdf","Download Codeigniter Interview(Q&A)/pdf","Download YII Framework Interview(Q&A)/pdf"]},
+	
+	{"id":"digital",
+	"pdf":["digital/seo.pdf", 
+	"digital/socialmedia.pdf"],
+	"heading" : ["Download SEO Interview(Q&A)/pdf","Download Social Media Interview(Q&A)/pdf"]},
+	
+	{"id":"data-structure",
+	"pdf":["data-structure/datastructure.pdf"],
+	"heading" : ["Download Data Structure Interview(Q&A)/pdf"]},
+	
+	{"id":"database",
+	"pdf":["database/mysql.pdf","database/sqlserver.pdf","database/oracle.pdf","database/mongodb.pdf"],
+	"heading" : ["Download Mysql Interview(Q&A)/pdf","Download Microsoft Sql Server Interview(Q&A)/pdf",
+	"Download Oracle Interview(Q&A)/pdf","Download MongoDB Interview(Q&A)/pdf"]},
+	
+	{"id":"javainterview",
+	"pdf":["java/Java-Interview-Questions.pdf", 
+	"java/core-java-interview-questions-and-answers.pdf","java/j2ee.pdf",
+	"java/spring.pdf","java/hibernate.pdf"],
+	"heading" : ["Download Java Interview(Q&A)/pdf","Download Corejava Interview(Q&A) /pdf",
+	"Download J2EE Interview(Q&A)/pdf","Download Spring Interview(Q&A)/pdf","Download Hibernate Interview(Q&A)/pdf"]},
+	
+	{"id":"mobile",
+	"pdf":["android/Android Interview Questions.pdf", 
+	"ios/ios.pdf","react_native/react_native.pdf"],
+	"heading" : ["Download Android Interview(Q&A)/pdf","Download IOS Interview(Q&A)/pdf",
+	"Download React Native Interview(Q&A)/pdf"]}
+    
+  ]
+}
+

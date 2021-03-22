@@ -1,0 +1,7 @@
+var dm = { "seo" : [ 
+            { "title"  : "Web Design/Development(WPT)", "href" : "web-development.php",
+			"keyword" : "PHP / Angular / HTML5",
+			"description":"Web Development(PT)"}],
+
+         }  
+ var i = 0;

@@ -1,0 +1,84 @@
+
+var myObj, i, j, x = "";
+myObj = {
+  "syllabus": [
+    {"id":"web_syllabus",
+	"pdf":["HTML-CSS-HTML5-CSS3-Syllabus.pdf", 
+	"HTML-CSS-HTML5-CSS3-Syllabus.pdf","advanced-js-jquery-syllabus.pdf",
+	"Bootstrap3,4-Syllabus-converted-converted.pdf","PHP5,7Syllabus-converted-converted.pdf"],
+	"heading" : ["Download HTML/HTML5 Syllabus","Download CSS/CSS3 Syllabus",
+	"Download JS/Advanced Js/jQuery Syllabus","Download Bootstrap3/4 Syllabus",
+	"Download PHP5/PHP7 Syllabus"]},
+	
+	{"id":"graphic_syllabus",
+	"pdf":["graphic-Syllabus-converted-converted.pdf", 
+	"graphic-Syllabus-converted-converted.pdf","graphic-Syllabus-converted-converted.pdf"],
+	"heading" : ["Download Photoshop Syllabus","Download Illustrator Syllabus",
+	"Download Corel Draw Syllabus"]},
+	
+	{"id":"data-science_syllabus",
+	"pdf":["datascience-syllabus.pdf", 
+	"pythonSyllabus.pdf","pythonSyllabus.pdf"],
+	"heading" : ["Download Data Science Syllabus","Download Basic Python Syllabus",
+	"Download Advance Python Syllabus"]},
+	
+	{"id":"java_syllabus",
+	"pdf":["hibernate-java-syllabus.pdf", 
+	"springjava-syllabus.pdf","advance-java-syllabus.pdf","Core-java-syllabus.pdf"],
+	"heading" : ["Download Hibernate Syllabus","Download Spring Syllabus",
+	"Download Advance Java Syllabus","Download Core Java Syllabus"]},
+	
+	{"id":"dm_syllabus",
+	"pdf":["digitalmarketing.pdf"],
+	"heading" : ["Download Digital Marketing Syllabus"]},
+	
+	{"id":"ds_syllabus",
+	"pdf":["LEARN DATA STRUCTURE AND ALGORITHM.pdf"],
+	"heading" : ["Download Data Structure & Algorithm Syllabus"]},
+	
+	{"id":"aptitude_syllabus",
+	"pdf":["aptitude.pdf","aptitude.pdf","aptitude.pdf"],
+	"heading" : ["Download Quantitative Syllabus","Download Verbal Syllabus","Download Reasoning Syllabus"]},
+	
+	{"id":"js_syllabus",
+	"pdf":["advanced-js-jquery-syllabus.pdf","angular7.pdf","reactjs.pdf","nodejs.pdf","vuejs.pdf"],
+	"heading" : ["Download JS/jQuery Syllabus","Download Angular7 Syllabus","Download React JS Syllabus",
+	"Download Node JS Syllabus","Download Vue JS Syllabus"]},
+	
+	{"id":"dotnet_syllabus",
+	"pdf":["asp-net-syllabus.pdf","csharp-and-aspnet-syllabus.pdf","ASP.NET MVC4.pdf","wcf.pdf",
+	"wpf.pdf","linq,entity framework.pdf","entity-framework-.net-syllabus.pdf","sharepoint.pdf"],
+	"heading" : ["Download ASP.NET Syllabus","Download C# Syllabus","Download ASP.NET MVC4 Syllabus",
+	"Download WCF Syllabus","Download WPF Syllabus","Download LINQ Syllabus",
+	"Download Entity Framework Syllabus","Download Sharepoint Syllabus"]},
+	
+	{"id":"php_framework",
+	"pdf":["larvel.pdf","cakephp.pdf","CODEIGNITER.pdf","symfony.pdf","yii.pdf"],
+	"heading" : ["Download Larvel Syllabus","Download CakePHP Syllabus","Download Codeigniter Syllabus",
+	"Download Symfony Syllabus","Download YII Framework Syllabus"]},
+	
+	{"id":"sap_syllabus",
+	"pdf":["sap-abap.pdf","sap-sd.pdf","sap-mm.pdf","sap-hana.pdf","sap-fico.pdf","sap-hr-hcm.pdf"],
+	"heading" : ["Download SAP ABAP Syllabus","Download SAP SD Syllabus","Download SAP MM Syllabus",
+	"Download SAP HANA Syllabus","Download SAP FICO Syllabus","Download SAP HR/HCM Syllabus"]},
+	
+	{"id":"programming_syllabus",
+	"pdf":["c.pdf","cplush.pdf","pythonSyllabus.pdf","iot1.pdf","embedded-systems.pdf","VLSI_Design.pdf"],
+	"heading" : ["Download C Syllabus","Download C++ Syllabus","Download Python Syllabus","Download IOT Syllabus",
+	"Download Embedded System Syllabus","Download VLSI Design Syllabus"]},
+	
+	{"id":"database_syllabus",
+	"pdf":["sqlserversyllabus.pdf","sqlserversyllabus.pdf","oracleandplsql.pdf","mongodb.pdf"],
+	"heading" : ["Download MySql Syllabus","Download Microsoft Sql Server Syllabus",
+	"Download Oracle and PLSql Syllabus","Download MongoDB Syllabus"]},
+	
+	{"id":"mobile_syllabus",
+	"pdf":["mobile app developement-Syllabus-converted-converted.pdf", 
+	"mobile app developement-Syllabus-converted-converted.pdf",
+	"mobile app developement-Syllabus-converted-converted.pdf"],
+	"heading" : ["Download Android Syllabus","Download IOS Syllabus",
+	"Download React Native Syllabus"]}
+    
+  ]
+}
+
