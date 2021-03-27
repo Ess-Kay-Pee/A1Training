@@ -1,3 +1,8 @@
-# A1Training
+#STEPS TO RUN THE PROJECT -
 
-It is website which provide study materials and training for different courses for any age group it also provides course for kids. I worked on designing of several pages in this website and testing for any issues.
+Download xampp and install it.
+Download Google Chrome and install it.
+Download the repository and keep all the files in a folder named 'a1training'.
+Go to 'htdocs' folder in xampp installation directory and paste 'a1training' folder.
+Now open xampp and start 'Apache' and 'MySQL'.
+Open Google Chrome and type the following in the Address bar - "localhost/a1training"
